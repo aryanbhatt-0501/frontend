@@ -1,0 +1,83 @@
+<div class="container">
+    <h3>Update Food Product</h3>
+    <form #updateData="ngForm" (ngSubmit)="editProduct(updateData)">
+        <div>
+        <div class="form-group">
+            <input 
+              type="text" 
+              class="form-control" 
+              id="name" 
+              placeholder="Enter Product Name"
+              name="name"
+              #name="ngModel"
+              required
+              [(ngModel)]="product.name"
+              >
+        </div>
+        <div>
+            <div class="form-group">
+              <input 
+              type="text" 
+              class="form-control" 
+              id="availabilty" 
+              placeholder="Enter Product availabilty"
+              name="availabilty"
+              #availabilty="ngModel"
+              required
+              [(ngModel)]="product.availability"
+              >
+        </div>
+
+        <div>
+            <div class="form-group">
+              <input 
+              type="text" 
+              class="form-control" 
+              id="about" 
+              placeholder="Enter About Product"
+              name="about"
+              #availabilty="ngModel"
+              required
+              [(ngModel)]="product.about"
+              >
+        </div>
+            <div>
+            <div class="form-group">
+              <input 
+              type="text" 
+              class="form-control" 
+              id="type" 
+              placeholder="Enter Product type"
+              name="type"
+              #type="ngModel"
+              required
+              [(ngModel)]="product.type"
+              >
+            </div>
+            <div>
+            <div class="form-group">
+              <input 
+              type="number" 
+              class="form-control" 
+              id="price" 
+              placeholder="Enter Product price"
+              name="price"
+              #price="ngModel"
+              required
+              [(ngModel)]="product.price"
+              >
+            </div>
+            <div>
+            <div class="form-group">
+              <input 
+              type="number" 
+              class="form-control" 
+              id="menu_id" 
+              placeholder="Enter  Menu Id"
+              name="menu_id"
+              #menu_id="ngModel"
+              required
+              [(ngModel)]="product.menu.id"
+              >
+            </div>
+    <button type="submit" class="btn btn-primary">ADD</button>
